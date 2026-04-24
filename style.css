@@ -1,81 +1,83 @@
 body {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   margin: 0;
-  background: #f4f6f8;
+  background: #f5f7fa;
+  line-height: 1.6;
 }
 
-/* HEADER */
+/* Header */
 header {
-  background: #4CAF50;
+  background: linear-gradient(120deg,#4CAF50,#2E7D32);
   color: white;
-  text-align: center;
-  padding: 30px;
-}
-
-/* SECTIONS */
-section {
   padding: 40px;
   text-align: center;
 }
 
+header h1 { margin: 0; font-size: 36px; }
+header p { margin-top: 10px; font-size: 18px; }
+
+/* Sections */
+section {
+  padding: 50px 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
 h2 {
-  color: #333;
+  margin-bottom: 20px;
+  color: #2E7D32;
 }
 
-/* SKILLS */
-ul {
-  list-style: none;
-  padding: 0;
-}
+/* Skills */
+ul { list-style: none; padding: 0; }
+li { padding: 6px; }
 
-li {
-  padding: 5px;
-}
-
-/* PROJECT CARDS */
+/* Projects */
 .project-container {
   display: flex;
-  justify-content: center;
-  gap: 20px;
   flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
 }
 
 .project-card {
   background: white;
-  padding: 20px;
-  width: 280px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: 0.3s;
+  padding: 25px;
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.1);
+  transition: 0.4s;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-12px) scale(1.03);
 }
 
-/* CONTACT BUTTONS */
-.contact-buttons {
-  margin-top: 20px;
-}
+/* Buttons */
+.contact-buttons { margin-top: 20px; }
 
 .btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 12px 24px;
   margin: 10px;
-  background: #4CAF50;
+  background: #2E7D32;
   color: white;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 6px;
   font-weight: bold;
+  transition: 0.3s;
 }
 
 .btn:hover {
-  background: #388E3C;
+  background: #1B5E20;
+  transform: scale(1.05);
 }
 
-/* FOOTER */
+/* Footer */
 footer {
-  background: #333;
+  background: #222;
   color: white;
-  padding: 15px;
+  padding: 20px;
+  text-align: center;
 }
