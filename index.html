@@ -1,167 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sakina Rubberstampwala | Portfolio</title>
+<title>Sakina Rubberstampwala Portfolio</title>
+<link rel="stylesheet" href="style.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:'Poppins',sans-serif;
-}
-
-body{
-    background:#0b1e3c;
-    color:#fff;
-}
-
-/* NAVBAR */
-nav{
-    background:#08162e;
-    padding:18px 8%;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-nav h2{color:#4da6ff;}
-nav a{
-    color:white;
-    text-decoration:none;
-    margin-left:25px;
-    font-weight:500;
-}
-
-/* HERO */
-.hero{
-    padding:90px 8%;
-}
-
-.hero h1{
-    font-size:48px;
-    margin-bottom:15px;
-}
-
-.hero span{color:#4da6ff;}
-
-.hero p{
-    max-width:600px;
-    line-height:1.6;
-    color:#d7e3ff;
-}
-
-/* SECTIONS */
-section{padding:70px 8%;}
-.section-title{
-    font-size:30px;
-    margin-bottom:30px;
-    color:#4da6ff;
-}
-
-/* CARDS */
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:#122b57;
-    padding:25px;
-    border-radius:12px;
-    transition:0.3s;
-}
-
-.card:hover{
-    transform:translateY(-8px);
-}
-
-/* CONTACT */
-.contact a{
-    color:#4da6ff;
-    text-decoration:none;
-    display:block;
-    margin:8px 0;
-}
-</style>
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<nav>
-    <h2>Sakina</h2>
-    <div>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </div>
-</nav>
+<!-- HERO -->
+<header>
+  <h1>Sakina Rubberstampwala</h1>
+  <p>BCA Student | Aspiring Data Analyst</p>
+</header>
 
-<section class="hero">
-    <h1>Hi, I'm <span>Sakina Rubberstampwala</span></h1>
-    <p>
-        BCA student with strong interest in Data Science and Web Applications.
-        I build responsive websites and create meaningful insights from data.
-        Currently seeking internship opportunities to apply my skills to real-world problems.
-    </p>
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    Motivated BCA student with a strong academic record (CGPA: 8.95),
+    currently exploring opportunities in Data Analytics and Web Development.
+    Passionate about turning data into meaningful insights and building
+    clean, user-friendly web experiences.
+  </p>
 </section>
 
-<section id="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="cards">
-
-        <div class="card">
-            <h3>Mood Tracker Web App</h3>
-            <p>Responsive application to track emotional patterns and visualize weekly insights.</p>
-        </div>
-
-        <div class="card">
-            <h3>WhatsApp Style Chat App</h3>
-            <p>Real-time messaging application built to understand functional web connectivity.</p>
-        </div>
-
-        <div class="card">
-            <h3>Caffinity Website</h3>
-            <p>Designed a visually appealing brand website focused on storytelling and UI.</p>
-        </div>
-
-    </div>
-</section>
-
+<!-- SKILLS -->
 <section id="skills">
-    <h2 class="section-title">Skills</h2>
-    <div class="cards">
+  <h2>Skills</h2>
 
-        <div class="card">
-            <h3>Programming</h3>
-            <p>Python, Java, C++</p>
-        </div>
-
-        <div class="card">
-            <h3>Data Science</h3>
-            <p>Data Visualization, Charts, MS Excel</p>
-        </div>
-
-        <div class="card">
-            <h3>Web Technologies</h3>
-            <p>HTML, CSS, JavaScript, Responsive Design</p>
-        </div>
-
+  <div class="skills-container">
+    <div class="skill-card">
+      <h3>Programming</h3>
+      <p>Python • Java • C++</p>
     </div>
+
+    <div class="skill-card">
+      <h3>Data Analytics</h3>
+      <p>Data Visualization • Charts • MS Excel</p>
+    </div>
+
+    <div class="skill-card">
+      <h3>Web Technologies</h3>
+      <p>HTML • CSS • JavaScript • Responsive UI</p>
+    </div>
+  </div>
 </section>
 
-<section id="contact" class="contact">
-    <h2 class="section-title">Contact</h2>
-    <p>Nagpur, India</p>
-    <a href="mailto:sakina.b1504@gmail.com">sakina.b1504@gmail.com</a>
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project-container">
+
+    <div class="project-card">
+      <h3>WhatsApp-Style Communication App</h3>
+      <p>
+        Developing a real-time messaging web application to understand
+        client-server communication and functional web connectivity.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>Caffinity Brand Website</h3>
+      <p>
+        Designed and developed a storytelling website using
+        WordPress and Canva focusing on modern UI design.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>Mood Tracker Web App</h3>
+      <p>
+        Responsive web app to track and visualize emotional
+        patterns weekly using charts and data visualization.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+
+  <p><b>Email:</b> sakina.b1504@email.com</p>
+  <p><b>Phone:</b> +91 9049466431</p>
+  <p><b>Location:</b> Nagpur, India</p>
+
+  <div class="links">
     <a href="https://github.com/Sakina-1504" target="_blank">GitHub</a>
     <a href="https://linkedin.com/in/sakina-rubberstampwala-a62925339" target="_blank">LinkedIn</a>
+  </div>
 </section>
+
+<footer>
+  <p>© 2026 Sakina Rubberstampwala</p>
+</footer>
 
 </body>
 </html>
