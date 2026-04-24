@@ -1,84 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sakina | Web Developer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sakina Rubberstampwala | Portfolio</title>
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0b1e3c;
+    color:#fff;
+}
+
+/* NAVBAR */
+nav{
+    background:#08162e;
+    padding:18px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav h2{color:#4da6ff;}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+}
+
+/* HERO */
+.hero{
+    padding:90px 8%;
+}
+
+.hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.hero span{color:#4da6ff;}
+
+.hero p{
+    max-width:600px;
+    line-height:1.6;
+    color:#d7e3ff;
+}
+
+/* SECTIONS */
+section{padding:70px 8%;}
+.section-title{
+    font-size:30px;
+    margin-bottom:30px;
+    color:#4da6ff;
+}
+
+/* CARDS */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#122b57;
+    padding:25px;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+/* CONTACT */
+.contact a{
+    color:#4da6ff;
+    text-decoration:none;
+    display:block;
+    margin:8px 0;
+}
+</style>
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-    <h1 class="logo">Sakina</h1>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
+<nav>
+    <h2>Sakina</h2>
+    <div>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero">
-    <div class="hero-text">
-        <h2>Front-End Web Developer</h2>
-        <p>Building clean, responsive and user-focused web experiences.</p>
-        <a href="#projects" class="btn">View Projects</a>
-    </div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section">
-    <h2>About Me</h2>
+    <h1>Hi, I'm <span>Sakina Rubberstampwala</span></h1>
     <p>
-        Motivated and detail-oriented web development enthusiast with strong
-        foundation in HTML, CSS and JavaScript. Passionate about building
-        responsive and visually appealing web applications.
+        BCA student with strong interest in Data Science and Web Applications.
+        I build responsive websites and create meaningful insights from data.
+        Currently seeking internship opportunities to apply my skills to real-world problems.
     </p>
 </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="section">
-    <h2>Projects</h2>
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="cards">
 
-    <div class="projects-container">
-
-        <div class="project-card">
-            <h3>Portfolio Website</h3>
-            <p>Personal responsive portfolio showcasing projects and skills.</p>
-            <a href="https://github.com/Sakina-1504" target="_blank">View Code</a>
+        <div class="card">
+            <h3>Mood Tracker Web App</h3>
+            <p>Responsive application to track emotional patterns and visualize weekly insights.</p>
         </div>
 
-        <div class="project-card">
-            <h3>Landing Page</h3>
-            <p>Modern responsive landing page using HTML & CSS.</p>
-            <a href="https://github.com/Sakina-1504" target="_blank">View Code</a>
+        <div class="card">
+            <h3>WhatsApp Style Chat App</h3>
+            <p>Real-time messaging application built to understand functional web connectivity.</p>
         </div>
 
-        <div class="project-card">
-            <h3>JavaScript Mini Apps</h3>
-            <p>Collection of small JavaScript projects and UI experiments.</p>
-            <a href="https://github.com/Sakina-1504" target="_blank">View Code</a>
+        <div class="card">
+            <h3>Caffinity Website</h3>
+            <p>Designed a visually appealing brand website focused on storytelling and UI.</p>
         </div>
 
     </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section contact">
-    <h2>Contact</h2>
-    <p>Email: sakina@email.com</p>
-    <p>GitHub: github.com/Sakina-1504</p>
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="cards">
+
+        <div class="card">
+            <h3>Programming</h3>
+            <p>Python, Java, C++</p>
+        </div>
+
+        <div class="card">
+            <h3>Data Science</h3>
+            <p>Data Visualization, Charts, MS Excel</p>
+        </div>
+
+        <div class="card">
+            <h3>Web Technologies</h3>
+            <p>HTML, CSS, JavaScript, Responsive Design</p>
+        </div>
+
+    </div>
 </section>
 
-<footer>
-    <p>© 2026 Sakina | Portfolio</p>
-</footer>
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact</h2>
+    <p>Nagpur, India</p>
+    <a href="mailto:sakina.b1504@gmail.com">sakina.b1504@gmail.com</a>
+    <a href="https://github.com/Sakina-1504" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/in/sakina-rubberstampwala-a62925339" target="_blank">LinkedIn</a>
+</section>
 
 </body>
 </html>
